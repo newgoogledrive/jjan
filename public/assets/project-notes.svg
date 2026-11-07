@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="240" viewBox="0 0 560 240" role="img" aria-labelledby="title">
+  <title id="title">A tidy stack of project notes</title>
+  <metadata>
+    <puzzle>/note2</puzzle>
+    <description>There is more to this image than its pixels.</description>
+  </metadata>
+  <rect width="560" height="240" rx="8" fill="#ebe5d7"/>
+  <rect x="76" y="46" width="320" height="148" rx="4" fill="#c8bda7" transform="rotate(-4 76 46)"/>
+  <rect x="116" y="35" width="320" height="148" rx="4" fill="#fffdf8" stroke="#d7d0c1"/>
+  <path d="M151 76h208M151 103h166M151 130h188" stroke="#b8b0a2" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="414" cy="158" r="37" fill="#a48f5f"/>
+  <path d="M397 158l12 12 23-26" fill="none" stroke="#fffdf8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

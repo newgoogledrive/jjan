@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500">
+  <title>Harbor Lantern upper layer blueprint</title>
+  <rect width="760" height="500" fill="#fff"/>
+  <g fill="none" stroke="#222" stroke-width="2">
+    <rect x="80" y="70" width="600" height="360"/>
+    <path d="M80 190h600M80 315h600M330 70v120M500 70v120M250 190v125M510 190v125M380 315v115"/>
+  </g>
+  <g fill="#222" font-family="monospace" font-size="16">
+    <text x="100" y="105">UPPER LEVEL 3</text>
+    <text x="355" y="105">LANTERN ROOM</text>
+    <text x="525" y="105">STAIR</text>
+    <text x="100" y="225">OFFICE</text>
+    <text x="275" y="225">CONNECTOR ROOM</text>
+    <text x="530" y="225">STORAGE</text>
+    <text x="100" y="350">UPPER LEVEL 1</text>
+    <text x="405" y="350">ENTRY</text>
+    <text x="100" y="470">HARBOR LANTERN / PLAN 04B</text>
+    <text x="515" y="470">LOWER LEVELS OMITTED</text>
+  </g>
+</svg>

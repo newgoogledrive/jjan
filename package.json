@@ -1,0 +1,15 @@
+{
+  "name": "jjan-puzzle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small multi-step web puzzle",
+  "scripts": {
+    "start": "node server.js",
+    "start:alternate": "PORT=3001 node server.js",
+    "harbor-lantern": "node server.js HARBOR-LANTERN",
+    "construct": "node server.js construct"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
