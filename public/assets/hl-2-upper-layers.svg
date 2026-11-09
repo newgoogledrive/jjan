@@ -1,20 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500">
-  <title>Harbor Lantern upper layer blueprint</title>
-  <rect width="760" height="500" fill="#fff"/>
-  <g fill="none" stroke="#222" stroke-width="2">
-    <rect x="80" y="70" width="600" height="360"/>
-    <path d="M80 190h600M80 315h600M330 70v120M500 70v120M250 190v125M510 190v125M380 315v115"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+  <title>Harbor Lantern, upper levels, plan 04B</title>
+  <rect width="1000" height="720" fill="#f8f7f1"/>
+  <g fill="none" stroke="#273d48" stroke-width="1">
+    <rect x="28" y="28" width="944" height="664"/>
+    <path d="M40 48h14m-7-7v14M946 48h14m-7-7v14M40 672h14m-7-7v14M946 672h14m-7-7v14"/>
+    <path d="M64 82H936M64 624H936" stroke-dasharray="4 5"/>
   </g>
-  <g fill="#222" font-family="monospace" font-size="16">
-    <text x="100" y="105">UPPER LEVEL 3</text>
-    <text x="355" y="105">LANTERN ROOM</text>
-    <text x="525" y="105">STAIR</text>
-    <text x="100" y="225">OFFICE</text>
-    <text x="275" y="225">CONNECTOR ROOM</text>
-    <text x="530" y="225">STORAGE</text>
-    <text x="100" y="350">UPPER LEVEL 1</text>
-    <text x="405" y="350">ENTRY</text>
-    <text x="100" y="470">HARBOR LANTERN / PLAN 04B</text>
-    <text x="515" y="470">LOWER LEVELS OMITTED</text>
+
+  <g fill="none" stroke="#273d48" stroke-width="2">
+    <rect x="128" y="126" width="690" height="420"/>
+    <path d="M128 330h690M128 444h690"/>
+    <path d="M334 126v204M556 126v204M334 330v114M614 330v114"/>
+    <path d="M390 444v102M614 444v102"/>
+    <path d="M128 182h28m-28 12h28M790 182h28m-28 12h28"/>
+    <path d="M128 478h40m-40 12h40M778 478h40m-40 12h40"/>
+    <path d="M430 330v-18m10 18v-18M580 330v-18m10 18v-18M410 444v-18m10 18v-18"/>
+    <path d="M556 126h22m-22 8h22M334 208h14m-14 8h14"/>
+  </g>
+
+  <g fill="none" stroke="#273d48" stroke-width="1">
+    <path d="M166 164h132v136H166zM170 168h124v128H170z"/>
+    <circle cx="232" cy="232" r="32"/>
+    <path d="M232 190v84m-42-42h84m-72-30 60 60m0-60-60 60"/>
+    <path d="M370 151h150v150H370zM386 167h118v118H386z"/>
+    <path d="M386 226h118M445 167v118"/>
+    <path d="M586 151h198v150H586z"/>
+    <path d="M594 160h182v132M610 176h148v100"/>
+    <path d="M160 354h146v70H160zM178 370h110v38H178z"/>
+    <path d="M358 350h224v78H358z"/>
+    <path d="M642 350h146v78H642zM660 366h110v46H660z"/>
+    <path d="M150 464h220v62H150zM166 478h188v34H166z"/>
+    <path d="M412 464h182v62H412z"/>
+    <path d="M636 464h166v62H636z"/>
+    <path d="M646 480h146M646 489h146M646 498h146"/>
+    <path d="M386 444v102m-5-86h10m-10 12h10m-10 12h10m-10 12h10m-10 12h10m-10 12h10"/>
+    <path d="M605 444v102m-5-86h10m-10 12h10m-10 12h10m-10 12h10m-10 12h10m-10 12h10"/>
+    <path d="M430 546v32m-6-10 6 10 6-10M430 578v20" stroke-dasharray="3 4"/>
+    <path d="M418 601h24m-20 5h16m-12 5h8" stroke-dasharray="2 4"/>
+  </g>
+
+  <g fill="none" stroke="#80919a" stroke-width="1">
+    <path d="M370 334h212" stroke-dasharray="2 5"/>
+    <path d="M400 448h180" stroke-dasharray="2 5"/>
+    <path d="M430 546v52" stroke-dasharray="2 5"/>
+    <path d="M118 126v420m-8-420h16m-16 204h16m-16 114h16m-16 102h16"/>
+    <path d="M128 112h690m-690-8v16m206-16v16m222-16v16m234-16v16"/>
+    <path d="M836 126v420m-8 0h16m-16-210h16m-16-210h16"/>
+    <circle cx="430" cy="388" r="28" stroke-dasharray="3 5"/>
+    <circle cx="430" cy="388" r="18" stroke-dasharray="2 6"/>
+  </g>
+
+  <g fill="#273d48" font-family="monospace">
+    <text x="64" y="70" font-size="17">HARBOR LANTERN / COASTAL WORKS</text>
+    <text x="64" y="96" font-size="12">TOWER RECONSTRUCTION — GENERAL ARRANGEMENT</text>
+    <text x="128" y="146" font-size="11">LANTERN ROOM</text>
+    <text x="389" y="188" font-size="11">OPTIC / ROTATION BED</text>
+    <text x="605" y="180" font-size="11">GALLERY</text>
+    <text x="606" y="197" font-size="10">handrail, 1.1m</text>
+    <text x="172" y="374" font-size="11">WATCH OFFICE</text>
+    <text x="386" y="378" font-size="11">CONNECTOR ROOM</text>
+    <text x="387" y="398" font-size="9">clear: 2.4 x 2.4</text>
+    <text x="657" y="385" font-size="11">STORE</text>
+    <text x="167" y="494" font-size="11">UPPER LEVEL 1</text>
+    <text x="432" y="490" font-size="10">STAIR / UP</text>
+    <text x="654" y="494" font-size="11">ENTRY VESTIBULE</text>
+    <text x="452" y="566" font-size="9">service route</text>
+    <text x="450" y="582" font-size="9">[not on this sheet]</text>
+    <text x="446" y="606" font-size="9">H.L. revision note:</text>
+    <text x="446" y="618" font-size="9">retain original alignment</text>
+    <text x="92" y="348" font-size="9" transform="rotate(-90 92 348)">NORTH ELEVATION DATUM</text>
+    <text x="128" y="566" font-size="9">PLAN 04B / SHEET 2 OF 3</text>
+    <text x="128" y="582" font-size="9">LOWER LEVEL DRAWINGS WITHHELD BY HARBOR LANTERN</text>
+    <text x="698" y="646" font-size="10">DRAWN: 04 / 17</text>
+    <text x="818" y="646" font-size="10">REV. C</text>
+  </g>
+
+  <g fill="none" stroke="#273d48" stroke-width="1">
+    <path d="M64 636h872M64 650h872"/>
+    <path d="M672 636v48m142-48v48m84-48v48"/>
+    <circle cx="906" cy="78" r="20"/>
+    <path d="M906 61v34m-17-17h34m-17-12 5 12-5 12-5-12z"/>
+  </g>
+  <g fill="#273d48" font-family="monospace" font-size="9">
+    <text x="681" y="656">SCALE 1:100</text>
+    <text x="821" y="656">ISSUED FOR SITE USE</text>
+    <text x="872" y="676">HL-04B</text>
+    <text x="900" y="53">N</text>
   </g>
 </svg>
