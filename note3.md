@@ -1,18 +1,26 @@
 # note 3
 
-**JJAN working file — entered 30 years ago**
+found in the Harbor Lantern files. not sure why it was left with the
+reconstruction notes but it wasnt in the stuff they gave us last time.
 
-**Source:** Harbor Lantern engineering archive  
-**Status:** Case reopened
+The old lighthouse was called *Jewel on the Horizon*, or *Harbor Lantern
+Jewel*. The one they started building again is usually called *Jewel 2*.
+Sometimes its *Jewel Reconstruction* in the files.
 
-We found this record while reviewing a copy of Harbor Lantern's file system. It was stored with the reconstruction paperwork, but it was not included in the material provided to us during our first visit.
+We came here the first time after people working on Jewel 2 stopped showing up.
+Harbor Lantern said the lower plans were restricted and the noise in the
+connector room was just the building settling. we didnt have the plans to check.
 
-That first investigation began after members of the reconstruction crew stopped reporting to the site. We were told that the lower plans were restricted and that the pulse heard in the connector room was ordinary settling. At the time, we had no measurements from below the service level to compare against that explanation.
+This note says there is a conduit from the connector room down to the heart
+room. It also says theres a pulse around 5 in the morning. No movement in the
+Jewel 2 machinery when they checked it.
 
-The recovered engineering notes describe a conduit running between the connector room and the heart room. They also record a pulse at approximately 05:00, with no visible movement in the lighthouse mechanism. This matches the time and sound noted in our earlier field report.
+That sounds like what we heard before. Maybe its nothing. Still, its a pretty
+specific time for a building to make the same noise every day.
 
-This is enough to reopen the file, but not enough to establish what caused the pulse or what happened to the missing workers. We are checking the recovered documents against the original site notes before returning to the lighthouse.
+We are opening the case again and going through the old site notes. We should
+probably go back to Jewel 2 once we know what else is in these files.
 
-## Follow-up
+## more later
 
-[Further findings to be added.]
+we havent finished checking everything yet.

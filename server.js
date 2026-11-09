@@ -134,6 +134,13 @@ function handler(port) {
       return send(response, 200, "text/html", page("note 2", markdownToHtml(readMarkdown("note2.md"))));
     }
 
+    if (pathname === "/harborasset/llp2/7e4c91b8" && port === primaryPort) {
+      return send(response, 200, "text/html", page(
+        "Note 3",
+        markdownToHtml(readMarkdown("note3.md")),
+      ));
+    }
+
     send(response, 404, "text/html", page("Not found", "<h1>404</h1><p>That page isn't here.</p>"));
   };
 }
@@ -157,14 +164,15 @@ function constructionHandler(request, response) {
 <head><meta charset="utf-8"><title>Harbor Lantern — LLP-2</title></head>
 <body>
   <h1>HARBOR LANTERN</h1>
-  <p>Engineering department / reconstruction file LLP-2</p>
+  <p>Engineering department / Jewel 2 reconstruction file LLP-2</p>
   <p>Issued: 40 years ago / revised copy</p>
   <p>Distribution: reconstruction office, site foreman, electrical contractor</p>
   <p>Subject: lower works, room dimensions and equipment schedule</p>
-  <p>Asset: Jewel on the Horizon / Harbor Lantern Jewel</p>
+  <p>Original lighthouse: Jewel on the Horizon / Harbor Lantern Jewel</p>
+  <p>Reconstruction: Jewel 2 / Jewel Reconstruction</p>
   <hr>
   <h2>General notes</h2>
-  <p>This sheet records the lower works required for the Harbor Lantern
+  <p>This sheet records the lower works required for the Jewel 2
   reconstruction. Dimensions are in metres unless otherwise stated. Clear
   dimensions are taken between finished faces. Existing stonework is irregular;
   verify all measurements at the site before ordering materials.</p>
@@ -215,7 +223,7 @@ South passage      10.40 x 1.80</pre>
   Gauges have been removed for calibration. Cabinet remains locked; key held
   by the Harbor Lantern site office.</p>
   <p>Heart room contains the central drive mechanism and generator assembly
-  supplying power to the lighthouse lamp. Clear floor area is 8.10 by 6.20 m.
+  supplying power to the Jewel 2 lamp. Clear floor area is 8.10 by 6.20 m.
   Keep a 1.00 m working space around the machinery. The east wall carries the
   output shaft and the vertical conduit leading toward the connector room.</p>
   <p>The conduit is 180 mm across at the upper opening and narrows behind the
@@ -275,19 +283,20 @@ Unmeasured room      not entered</pre>
   <p>Sheet LLP-2, revision B. Lower chamber measurements remain provisional.</p>
   <p>end of report</p>
   <hr>
-  <p>JJAN (30 years ago): During a review of Harbor Lantern's file system, we
-  found this document alongside records from our first investigation of the
-  lighthouse and the missing reconstruction workers, 10-11 years ago. We have
-  reopened the case. This file may be relevant:
-  <a href="/harborasset/llp2/7e4c91b8">read the recovered note</a>.</p>
+  <p>JJAN (30 years ago): We found this note in Harbor Lantern's file system,
+  filed with records from our investigation of Jewel on the Horizon and the
+  missing Jewel 2 reconstruction workers 10-11 years ago. We have reopened
+  the case. Read the
+  recovered note:
+  <a href="/harborasset/llp2/7e4c91b8">/harborasset/llp2/7e4c91b8</a>.</p>
 </body>
 </html>`);
   }
   if (pathname === "/harborasset/llp2/7e4c91b8") {
-    const note = markdownToHtml(readMarkdown("note3.md"));
+    const note = markdownToHtml(readMarkdown("note3-placeholder.md"));
     return send(response, 200, "text/html", `<!doctype html>
 <html>
-<head><meta charset="utf-8"><title>JJAN — Note 3</title></head>
+<head><meta charset="utf-8"><title>note 3</title></head>
 <body>
 ${note}
 </body>
@@ -316,10 +325,10 @@ ${note}
   disappearances again.</p>
   <h3>ORIGINAL LIGHTHOUSE DISAPPEARANCE</h3>
   <p>Harbor Lantern was a major lighthouse and navigation company. Its
-  lighthouse, known as Jewel on the Horizon and Harbor Lantern Jewel, was
+  original lighthouse, known as Jewel on the Horizon and Harbor Lantern Jewel, was
   completed 11 years ago, then disappeared before the year was over.</p>
   <p>There was no report of an explosion, collapse, or storm large enough
-  to account for it. The foundation was still there. The lighthouse was
+  to account for it. The foundation was still there. Jewel on the Horizon was
   simply gone.</p>
   <p>Witness statements collected at the time:</p>
   <blockquote>"the lighthouse just walked away"</blockquote>
@@ -327,7 +336,8 @@ ${note}
   <blockquote>"the light went out and then it wasn't there anymore"</blockquote>
   <blockquote>"I saw something tall moving toward the water"</blockquote>
   <h3>RECONSTRUCTION PROJECT</h3>
-  <p>Harbor Lantern began rebuilding it 10 years ago. This is when members
+  <p>Harbor Lantern began rebuilding it as Jewel 2, also called Jewel
+  Reconstruction, 10 years ago. This is when members
   of the reconstruction team began disappearing. The project was stopped.</p>
   <p>The team had rebuilt part of the lower structure when the first person
   failed to return from a supply run. No vehicle was found.</p>
@@ -342,8 +352,8 @@ ${note}
   old site.</p>
   <h3>OBSERVATIONS</h3>
   <ul>
-    <li>the old lighthouse plans contain measurements for a fourth level</li>
-    <li>the same lighthouse is marked at three different locations</li>
+    <li>the Jewel on the Horizon plans contain measurements for a fourth level</li>
+    <li>Jewel on the Horizon is marked at three different locations</li>
     <li>the recovered logs are written in the present tense</li>
   </ul>
   <h3>RECOVERED LOG 03</h3>
@@ -365,15 +375,16 @@ ${note}
 <body>
   <h1>JJAN CASE FILE HL-2</h1>
   <p>published: 41 years ago</p>
-  <p>first response to the Harbor Lantern reconstruction site</p>
-  <p>asset: Jewel on the Horizon, also called Harbor Lantern Jewel</p>
+  <p>first response to the Jewel 2 reconstruction site</p>
+  <p>original lighthouse: Jewel on the Horizon, also called Harbor Lantern Jewel</p>
+  <p>reconstruction: Jewel 2, also called Jewel Reconstruction</p>
   <hr>
   <p>JJAN was called out after three members of the reconstruction team
   failed to report for work. Harbor Lantern says they have left the project.
   Their belongings are still in the bunkhouse.</p>
   <p>The fourth member says the missing people were working below the
-  foundation. He will not go back inside.</p>
-  <p>We have requested the original plans. Harbor Lantern has refused to
+  Jewel 2 foundation. He will not go back inside.</p>
+  <p>We have requested the Jewel on the Horizon plans. Harbor Lantern has refused to
   provide the lower-level drawings.</p>
   <p>The connector room gives off a very faint pulse every day at 05:00.
   The sound seems to come from the lowest level. We cannot find a machine,
