@@ -143,8 +143,139 @@ function constructionHandler(request, response) {
   if (pathname === "/assets/hl-2-upper-layers.svg") {
     return fs.readFile(path.join(root, "public/assets/hl-2-upper-layers.svg"), (error, content) => {
       if (error) return send(response, 404, "text/plain", "Not found.");
-      send(response, 200, "image/svg+xml", content);
+      response.writeHead(200, {
+        "Content-Type": "image/svg+xml; charset=utf-8",
+        "Content-Disposition": 'attachment; filename="hl-2-upper-layers.svg"',
+        "Cache-Control": "no-store",
+      });
+      response.end(content);
     });
+  }
+  if (pathname === "/harborasset/llp2") {
+    return send(response, 200, "text/html", `<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Harbor Lantern — LLP-2</title></head>
+<body>
+  <h1>HARBOR LANTERN</h1>
+  <p>Engineering department / reconstruction file LLP-2</p>
+  <p>Issued: 40 years ago / revised copy</p>
+  <p>Distribution: reconstruction office, site foreman, electrical contractor</p>
+  <p>Subject: lower works, room dimensions and equipment schedule</p>
+  <p>Asset: Jewel on the Horizon / Harbor Lantern Jewel</p>
+  <hr>
+  <h2>General notes</h2>
+  <p>This sheet records the lower works required for the Harbor Lantern
+  reconstruction. Dimensions are in metres unless otherwise stated. Clear
+  dimensions are taken between finished faces. Existing stonework is irregular;
+  verify all measurements at the site before ordering materials.</p>
+  <p>The upper plan is issued separately. This copy covers the service levels
+  and rooms below the main entry. Do not use this sheet as a setting-out plan.</p>
+  <p>Datum 0.00 is the finished floor at the main entry. Levels below datum are
+  shown with a minus sign. Wall thickness is not included in room dimensions.</p>
+  <h2>Level -1: service level</h2>
+  <p>Finished floor: -4.20 m. Ceiling height varies from 2.35 m to 2.50 m.
+  Principal passage runs west to east. Existing masonry to be retained where
+  sound.</p>
+  <pre>West passage       18.20 x 2.10
+Pump room           6.00 x 4.40
+Stores              5.20 x 3.80
+Connector room      4.80 x 4.80
+East passage        11.60 x 1.90</pre>
+  <p>The connector room is directly below upper level 2. Its north wall is
+  aligned with the upper plan partition. A circular service conduit passes
+  through the ceiling near the centre of the room. Keep the conduit clear;
+  no fittings are to be fixed to it.</p>
+  <p>West passage floor falls approximately 1:180 toward the pump room. A
+  shallow channel is cut along the south wall. No standing water was present
+  at the time of survey.</p>
+  <p>Pump room: two positions are provided on the east wall. Pump A remains
+  connected to the cistern line. Pump B is disconnected and tagged for
+  inspection. Floor drain is 100 mm diameter. Keep access to the drain clear.</p>
+  <p>Stores: timber shelving on the north and west walls. Spare lamp glass,
+  cable drums and general fittings are listed in the attached inventory.
+  Nothing of unusual weight is to be stored against the east partition.</p>
+  <p>Connector room finish is unfinished stone. No windows. One door opening
+  to the west passage, 0.90 m wide. The opposite wall is shown as solid on
+  the survey drawing.</p>
+  <h2>Level -2: equipment level</h2>
+  <p>Finished floor: -8.65 m. Ceiling height 2.70 m at the cable room, reducing
+  to 2.30 m along the south passage. Cable trays are to remain accessible.</p>
+  <pre>Cable room          7.50 x 3.00
+Cistern             9.00 x 3.40 (depth not recorded)
+Instrument room     4.00 x 3.60
+Heart room          8.10 x 6.20
+South passage      10.40 x 1.80</pre>
+  <p>Cable room contains the main feed and distribution board for the lantern
+  assembly. Existing ceramic insulators are to be retained. New cable is to
+  follow the north wall and pass through the sleeve marked C-4.</p>
+  <p>The cistern is rectangular at the north end and rounded at the south.
+  Internal length is approximately 9.00 m. Water depth was not measured.
+  Access cover is 0.75 m square; replacement cover to be made in cast iron.</p>
+  <p>Instrument room contains two wall gauges, a bench and one sealed cabinet.
+  Gauges have been removed for calibration. Cabinet remains locked; key held
+  by the Harbor Lantern site office.</p>
+  <p>Heart room contains the central drive mechanism and generator assembly
+  supplying power to the lighthouse lamp. Clear floor area is 8.10 by 6.20 m.
+  Keep a 1.00 m working space around the machinery. The east wall carries the
+  output shaft and the vertical conduit leading toward the connector room.</p>
+  <p>The conduit is 180 mm across at the upper opening and narrows behind the
+  stonework. Its full route has not been measured. No access hatch is indicated
+  on the issued upper-level plans.</p>
+  <p>During the morning inspection the mechanism is stationary. At 05:00 a
+  low pulse can be heard in the connector room and through the conduit.
+  No corresponding movement is visible at the drive assembly. Check the
+  mounting and record again before changing any part.</p>
+  <h2>Level -3: lower chamber</h2>
+  <p>Finished floor estimate: -12.10 m. Survey is incomplete. Measurements
+  below are taken from the accessible portion only and must not be used for
+  excavation or ordering.</p>
+  <pre>Main chamber        12.40 x 5.00 to 5.60
+Dry room             3.00 x 2.80
+East passage         6.30 x approx. 1.70
+Unmeasured room      not entered</pre>
+  <p>The dry room has a timber bench and two wall hooks. No equipment is
+  assigned to it. The east passage continues beyond the point reached by the
+  survey team. Floor appears level; the end could not be seen from the turn.</p>
+  <p>A second room is reached through a door opening inward from the south
+  wall. The door was not opened. Room dimensions and use are not recorded.
+  Do not force the door; report any change in its position to the foreman.</p>
+  <p>One further recess, 1.20 m deep, is cut into the west side of the main
+  chamber. It is suitable for pipe access and is not included in the floor
+  area.</p>
+  <h2>Materials and work schedule</h2>
+  <ul>
+    <li>retain sound masonry; repoint loose joints with matching lime mortar</li>
+    <li>replace corroded iron brackets in the west passage</li>
+    <li>renew pump B isolation valve and test pump A before filling the cistern</li>
+    <li>replace cable tray covers in the equipment passage</li>
+    <li>do not block the conduit between the heart room and connector room</li>
+    <li>leave the lower chamber out of the current reconstruction estimate</li>
+  </ul>
+  <h2>Survey differences</h2>
+  <p>The connector room measures 4.80 m square at floor level. A previous
+  measurement gives 4.60 m east to west. The wall is not square. Use the
+  current measurement for the floor only; the ceiling opening is offset
+  approximately 0.35 m to the east.</p>
+  <p>The south passage on the first survey is marked as a store. No dividing
+  wall was found on site. Retain the passage as open until the foreman confirms
+  the work order.</p>
+  <p>There is a difference of 0.40 m between the recorded depth of the heart
+  room and the lower chamber. This may be a measurement error. No section
+  drawing is available.</p>
+  <h2>Inspection record</h2>
+  <pre>05:00  pulse reported in connector room
+05:06  no movement at drive assembly
+05:18  pulse not heard
+08:30  conduit inspected from connector room; no access found
+11:45  lower chamber survey stopped
+        east passage not cleared</pre>
+  <p>Prepared by: Harbor Lantern Engineering Department</p>
+  <p>Checked: reconstruction office</p>
+  <p>Copy: site foreman / electrical contractor</p>
+  <p>Sheet LLP-2, revision B. Lower chamber measurements remain provisional.</p>
+  <p>end of report</p>
+</body>
+</html>`);
   }
   if (pathname === "/") {
     response.writeHead(302, { Location: "/hl-11", "Cache-Control": "no-store" });
@@ -168,9 +299,9 @@ function constructionHandler(request, response) {
   <p>We have found a new lead, and we are currently investigating the
   disappearances again.</p>
   <h3>ORIGINAL LIGHTHOUSE DISAPPEARANCE</h3>
-  <p>Harbor Lantern was a major lighthouse and navigation company. The
-  lighthouse was completed 11 years ago, then disappeared before the year
-  was over.</p>
+  <p>Harbor Lantern was a major lighthouse and navigation company. Its
+  lighthouse, known as Jewel on the Horizon and Harbor Lantern Jewel, was
+  completed 11 years ago, then disappeared before the year was over.</p>
   <p>There was no report of an explosion, collapse, or storm large enough
   to account for it. The foundation was still there. The lighthouse was
   simply gone.</p>
@@ -219,6 +350,7 @@ function constructionHandler(request, response) {
   <h1>JJAN CASE FILE HL-2</h1>
   <p>published: 41 years ago</p>
   <p>first response to the Harbor Lantern reconstruction site</p>
+  <p>asset: Jewel on the Horizon, also called Harbor Lantern Jewel</p>
   <hr>
   <p>JJAN was called out after three members of the reconstruction team
   failed to report for work. Harbor Lantern says they have left the project.
@@ -237,7 +369,7 @@ function constructionHandler(request, response) {
 10:19 - footprints stop at the wall
 10:20 - [end of first report]
 -- addendum, 05:12 - pulse heard again --</pre>
-  <p><a href="/assets/hl-2-upper-layers.svg">upper layers blueprint</a></p>
+  <p><a href="/assets/hl-2-upper-layers.svg" download>download upper layers plan</a></p>
   <p><a href="/hl-11">back to HL-11</a></p>
 </body>
 </html>`);
