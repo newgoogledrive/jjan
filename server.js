@@ -274,6 +274,22 @@ Unmeasured room      not entered</pre>
   <p>Copy: site foreman / electrical contractor</p>
   <p>Sheet LLP-2, revision B. Lower chamber measurements remain provisional.</p>
   <p>end of report</p>
+  <hr>
+  <p>JJAN (30 years ago): During a review of Harbor Lantern's file system, we
+  found this document alongside records from our first investigation of the
+  lighthouse and the missing reconstruction workers, 10-11 years ago. We have
+  reopened the case. This file may be relevant:
+  <a href="/harborasset/llp2/7e4c91b8">read the recovered note</a>.</p>
+</body>
+</html>`);
+  }
+  if (pathname === "/harborasset/llp2/7e4c91b8") {
+    const note = markdownToHtml(readMarkdown("note3.md"));
+    return send(response, 200, "text/html", `<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>JJAN — Note 3</title></head>
+<body>
+${note}
 </body>
 </html>`);
   }
