@@ -177,6 +177,13 @@ function handler(port) {
       ));
     }
 
+    if (port === primaryPort && pathname === "/jewel-updates/note7") {
+      return send(response, 200, "text/html", page(
+        "Note 7",
+        `<img class="rotu-corner" src="/assets/rotu-mark.svg" alt="RoTU">${markdownToHtml(readMarkdown("note7.md"))}`,
+      ));
+    }
+
     send(response, 404, "text/html", page("Not found", "<h1>404</h1><p>That page isn't here.</p>"));
   };
 }
