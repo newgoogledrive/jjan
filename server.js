@@ -51,7 +51,7 @@ function markdownToHtml(markdown) {
 
 function inlineMarkdown(value) {
   return escapeHtml(value)
-    .replace(/\[([^\]]+)\]\((\/[^)]+|#[^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\[([^\]]+)\]\(((?:\/|#|https?:\/\/)[^)]+)\)/g, '<a href="$2">$1</a>')
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/`([^`]+)`/g, "<code>$1</code>");
 }
@@ -149,6 +149,27 @@ function handler(port) {
       ));
     }
 
+    if (pathname === "/jewel-updates/note7" && port === primaryPort) {
+      return send(response, 200, "text/html", page(
+        "Note 7",
+        `<img class="rotu-corner" src="/assets/rotu-mark.svg" alt="RoTU">${markdownToHtml(readMarkdown("note7.md"))}`,
+      ));
+    }
+
+    if (pathname === "/jewel-updates/note8" && port === primaryPort) {
+      return send(response, 200, "text/html", page(
+        "Note 8",
+        `<img class="rotu-corner" src="/assets/rotu-mark.svg" alt="RoTU">${markdownToHtml(readMarkdown("note8.md"))}`,
+      ));
+    }
+
+    if (pathname === "/jewel-updates/note9" && port === primaryPort) {
+      return send(response, 200, "text/html", page(
+        "Note 9",
+        `<img class="rotu-corner" src="/assets/rotu-mark.svg" alt="RoTU">${markdownToHtml(readMarkdown("note9.md"))}`,
+      ));
+    }
+
     if (port === primaryPort && (pathname === "/jewel-updates" || pathname === "/jewel-research")) {
       return send(response, 200, "text/html", page(
         "Jewel Updates",
@@ -177,19 +198,21 @@ function handler(port) {
       ));
     }
 
-    if (port === primaryPort && pathname === "/jewel-updates/note7") {
-      return send(response, 200, "text/html", page(
-        "Note 7",
-        `<img class="rotu-corner" src="/assets/rotu-mark.svg" alt="RoTU">${markdownToHtml(readMarkdown("note7.md"))}`,
-      ));
-    }
-
     send(response, 404, "text/html", page("Not found", "<h1>404</h1><p>That page isn't here.</p>"));
   };
 }
 
 function constructionHandler(request, response) {
   const pathname = new URL(request.url, `http://${request.headers.host || "localhost"}`).pathname;
+  if (pathname === "/harborarchive/jlouken/will-copy-17") {
+    return send(response, 200, "text/html", `<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>John Louken — last will and testament</title></head>
+<body>
+${markdownToHtml(readMarkdown("john-louken-will.md"))}
+</body>
+</html>`);
+  }
   if (pathname === "/assets/hl-2-upper-layers.svg") {
     return fs.readFile(path.join(root, "public/assets/hl-2-upper-layers.svg"), (error, content) => {
       if (error) return send(response, 404, "text/plain", "Not found.");

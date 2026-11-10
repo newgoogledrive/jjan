@@ -2,6 +2,11 @@
 
 **Jewel Updates — one week after Note 6**
 
+This update is split into two parts because several things happened at once.
+This first part covers RoTU's findings at Jewel 2 and the lead from Louken's
+will. Note 8 continues with JJAN's interview with Robert Hale and RoTU's
+report later the same day.
+
 RoTU went back into the lower levels to repeat the measurements from the last
 visit. They used the same tape, the same two people, and the same points on
 the walls. Almost the whole heart room had changed again. The south wall was
@@ -33,6 +38,11 @@ The rest of the will is ordinary instructions about property and personal
 effects. Clause 17 is handwritten in the margin and initialled J.L. There is
 no date beside it. “The second light” probably means Jewel 2, but the will
 doesn't explain what “the record of its first room” is.
+
+We have a copy of Louken's will in the JJAN archive. Open this path on port
+3002 to read the full transcription:
+
+`/harborarchive/jlouken/will-copy-17`
 
 We checked the public archive and the Harbor Lantern file copy. Neither has
 the old survey papers attached. The catalogue lists a box of survey material
@@ -67,5 +77,7 @@ inside its wall, and Louken left a note about a record that nobody can find.
 We also have a separate report of a lighthouse across the water.
 
 ## more when they report back
+
+[Jewel Update 3 continues in Note 8](/jewel-updates/note8)
 
 [Back to the Jewel Updates index](/jewel-updates)
