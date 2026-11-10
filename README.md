@@ -7,7 +7,7 @@ the notes are probably out of date.
 
 ## What is here
 
-- a little server
+- a little server, start with "npm start"
 - some test files
 - project notes
 

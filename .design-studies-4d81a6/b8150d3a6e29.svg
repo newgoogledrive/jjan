@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="210" viewBox="0 0 760 210">
+  <title>NARAO wordmark</title>
+  <defs>
+    <clipPath id="narao-letters">
+      <text x="24" y="137" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="300" letter-spacing="18">NARAO</text>
+    </clipPath>
+    <g id="narao-face">
+      <text x="24" y="137" fill="#123d45" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="300" letter-spacing="18">NARAO</text>
+    </g>
+  </defs>
+  <g fill="#09272e" aria-hidden="true">
+    <text x="30" y="143" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="300" letter-spacing="18">NARAO</text>
+    <text x="28" y="141" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="300" letter-spacing="18">NARAO</text>
+  </g>
+  <use href="#narao-face" x="0" y="0"/>
+  <g clip-path="url(#narao-letters)" fill="none" stroke="#e9f1ef">
+    <path d="M14 101h45l10-17 16 32 17-28 15 13h42l13-18 17 34 15-24 13 8h42l12-12 15 22 17-34 15 24h43l13-16 16 25 15-18h48" stroke-width="3"/>
+    <path d="M14 107h45l10-17 16 32 17-28 15 13h42l13-18 17 34 15-24 13 8h42l12-12 15 22 17-34 15 24h43l13-16 16 25 15-18h48" stroke="#d18747" stroke-width="1"/>
+  </g>
+  <path d="M24 161h620" stroke="#123d45" stroke-width="1"/>
+  <g stroke="#43828a" stroke-width="1">
+    <path d="M24 153v16M74 157v8M124 157v8M174 157v8M224 157v8M274 157v8M324 157v8M374 157v8M424 157v8M474 157v8M524 157v8M574 157v8M624 153v16"/>
+  </g>
+  <circle cx="645" cy="161" r="3" fill="#d18747"/>
+</svg>

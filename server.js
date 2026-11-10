@@ -51,6 +51,7 @@ function markdownToHtml(markdown) {
 
 function inlineMarkdown(value) {
   return escapeHtml(value)
+    .replace(/\[([^\]]+)\]\((\/[^)]+|#[^)]+)\)/g, '<a href="$2">$1</a>')
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/`([^`]+)`/g, "<code>$1</code>");
 }
@@ -109,6 +110,13 @@ function handler(port) {
       });
     }
 
+    if (pathname === "/assets/rotu-mark.svg") {
+      return fs.readFile(path.join(root, "public/assets/rotu-mark.svg"), (error, content) => {
+        if (error) return send(response, 404, "text/plain", "Not found.");
+        send(response, 200, "image/svg+xml", content);
+      });
+    }
+
     if (pathname === "/README.md") {
       return send(response, 200, "text/markdown", readMarkdown("README.md"));
     }
@@ -138,6 +146,34 @@ function handler(port) {
       return send(response, 200, "text/html", page(
         "Note 3",
         markdownToHtml(readMarkdown("note3.md")),
+      ));
+    }
+
+    if (port === primaryPort && (pathname === "/jewel-updates" || pathname === "/jewel-research")) {
+      return send(response, 200, "text/html", page(
+        "Jewel Updates",
+        markdownToHtml(readMarkdown("jewel-updates.md")),
+      ));
+    }
+
+    if (port === primaryPort && pathname === "/jewel-updates/note4") {
+      return send(response, 200, "text/html", page(
+        "Note 4",
+        markdownToHtml(readMarkdown("note4.md")),
+      ));
+    }
+
+    if (port === primaryPort && pathname === "/jewel-updates/note5") {
+      return send(response, 200, "text/html", page(
+        "Note 5",
+        markdownToHtml(readMarkdown("note5.md")),
+      ));
+    }
+
+    if (port === primaryPort && pathname === "/jewel-updates/note6") {
+      return send(response, 200, "text/html", page(
+        "Note 6",
+        `<img class="rotu-corner" src="/assets/rotu-mark.svg" alt="RoTU">${markdownToHtml(readMarkdown("note6.md"))}`,
       ));
     }
 

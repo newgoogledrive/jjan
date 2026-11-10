@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="210" viewBox="0 0 700 210">
+  <title>JJAN wordmark</title>
+  <defs>
+    <clipPath id="jjan-letters">
+      <text x="32" y="143" font-family="Georgia, 'Times New Roman', serif" font-size="132" font-weight="bold" letter-spacing="10">JJAN</text>
+    </clipPath>
+  </defs>
+  <path d="M18 45v110M25 45v110" stroke="#a44a38" stroke-width="2"/>
+  <text x="32" y="143" fill="#20201e" font-family="Georgia, 'Times New Roman', serif" font-size="132" font-weight="bold" letter-spacing="10">JJAN</text>
+  <g clip-path="url(#jjan-letters)" fill="none" stroke="#f3efe3">
+    <path d="M25 102h460M25 108h460" stroke-width="2"/>
+    <path d="M25 113h460" stroke-width="1"/>
+  </g>
+  <path d="M32 165h424M32 170h94" stroke="#20201e" stroke-width="1"/>
+  <text x="475" y="161" fill="#a44a38" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">field record</text>
+</svg>
